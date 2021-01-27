@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Your website html</title>
+<!-- Include the css file   -->
+<link defer href="https://huie.community.druidplatform.com/druid_webchat.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Include the script file   -->
+<script defer type="text/javascript" src="https://huie.community.druidplatform.com/druid_webchat.js"></script>
+
+<!-- Init the webchat component on document load -->
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+    DruidWebchat.init({
+        botId: "25df12c1-8ebb-43a2-f806-08d8a3960204",
+        baseUrl: "https://comm-druid-api.azurewebsites.net",    
+        queryParams: "", // pass queryParams to AuthorizeAsync method
+        UI: {
+            containerElement: null, // [MANDATORY] example: document.getElementById('druidContainerElement') -> specify the webchat expand DOM element
+        }
+});
+});
+</script>
+</body>
+</html>
